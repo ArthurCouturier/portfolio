@@ -15,7 +15,7 @@ export default function Header() {
                     <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10 flex">
                         <div className={"flex-1"}>
                             <a className="text-3xl text-gray-700 font-extrabold mb-5" href={"/"}>
-                                CoutCout portfolio
+                                CoutCout
                             </a>
                             <div className="text-gray-500 text-lg">
                                 React and Tailwind CSS are in action on this website
