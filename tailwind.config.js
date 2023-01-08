@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+        'josefin': ['Josefin', 'sans']
+      },
+      fontUrl: {
+        'raleway': 'https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap',
+        'josefin': 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Raleway:wght@500&display=swap'
+      }
+    },
   },
   plugins: [],
 }
