@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { ReactComponent as ResumeSVG } from "../assets/icons8-contacts.svg";
+import { ReactComponent as SkillsSVG } from "../assets/icons8-walter-white.svg";
+import { ReactComponent as WorksSVG } from "../assets/icons8-toolbox.svg";
 
 export default function Home() {
     return (
@@ -15,19 +18,25 @@ export default function Home() {
                         Hi I am Arthur Couturier, a french computer engineer
                     </div>
                     <div className={"flex-1 text-center"}>
-                        Let me show you some of my skills
+                        This portfolio is under construction
                     </div>
                 </div>
                 <div className={"flex-1 flex"}>
-                    <a className={"flex-1 text-center"}>
-                        My Resume
-                    </a>
-                    <a className={"flex-1 text-center"} href={"/Skills"}>
-                        My Skills
-                    </a>
-                    <a className={"flex-1 text-center"} href={"/Works"}>
-                        My Works
-                    </a>
+                    <div className={"flex-1"}>
+                        <a className={"flex items-center mx-auto"}>
+                            <ResumeSVG /> My Resume
+                        </a>
+                    </div>
+                    <div className={"flex-1"}>
+                        <a className={"flex items-center"} href={"/Skills"}>
+                            <SkillsSVG /> My Skills
+                        </a>
+                    </div>
+                    <div className={"flex-1"}>
+                        <a className={"flex items-center"} href={"/Works"}>
+                            <WorksSVG /> My Works
+                        </a>
+                    </div>
                 </div>
             </div>
 
