@@ -1,18 +1,20 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+// @ts-ignore
 import { ReactComponent as ResumeSVG } from "../assets/icons8-contacts.svg";
+// @ts-ignore
 import { ReactComponent as SkillsSVG } from "../assets/icons8-walter-white.svg";
+// @ts-ignore
 import { ReactComponent as WorksSVG } from "../assets/icons8-toolbox.svg";
+// @ts-ignore
+import pdf from '../assets/cvM1.pdf';
+import InternRoute from "./InternRoute";
 
 export default function Home() {
     return (
         <>
-            <div className={"h-[30vh]"}>
-                <Header />
-            </div>
-
-            <div className={"bg-gray-200 shadow border flex-grow h-[70vh]"}>
+            <div className={"h-[70vh] bg-gray-200 shadow border flex-grow"}>
                 <div className={"flex-1 flex h-[20vh]"}>
                     <div className={"flex-1 text-center"}>
                         Hi I am Arthur Couturier, a french computer engineer
@@ -22,25 +24,11 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"flex-1 flex"}>
-                    <div className={"flex-1"}>
-                        <a className={"flex items-center mx-auto"}>
-                            <ResumeSVG /> My Resume
-                        </a>
-                    </div>
-                    <div className={"flex-1"}>
-                        <a className={"flex items-center"} href={"/Skills"}>
-                            <SkillsSVG /> My Skills
-                        </a>
-                    </div>
-                    <div className={"flex-1"}>
-                        <a className={"flex items-center"} href={"/Works"}>
-                            <WorksSVG /> My Works
-                        </a>
-                    </div>
+                    <InternRoute route={pdf} Svg={ResumeSVG} str={"My Resume"} newTab />
+                    <InternRoute route={"/Skills"} Svg={SkillsSVG} str={"My Skills"} />
+                    <InternRoute route={"/Works"} Svg={WorksSVG} str={"My Works"} />
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 };

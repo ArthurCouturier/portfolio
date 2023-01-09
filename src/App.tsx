@@ -4,30 +4,48 @@ import Home from './pages/Home';
 import Works from './pages/Works';
 import Skills from './pages/Skills';
 import About from './pages/About';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home/>
+        element: <Home />
     },
     {
         path: '/works',
-        element: <Works/>
+        element: <Works />
     },
     {
         path: '/skills',
-        element: <Skills/>
+        element: <Skills />
     },
     {
         path: '/about',
-        element: <About/>
-    }
+        element: <About />
+    },
 ])
 
 export default function App() {
-  return (
-    <div className="App">
-      <RouterProvider router={router}/>
-    </div>
-  );
+    const [displayMenu, setDisplayMenu] = React.useState(false);
+    return (
+        <>
+            {
+                !displayMenu? (
+                    <>
+                        <div className={"h-[30vh]"}>
+                            <Header displayMenu={displayMenu} setDisplayMenu={setDisplayMenu}/>
+                        </div>
+                        <RouterProvider router={router}/><Footer/>
+                    </>
+                ) : (
+                    <>
+                        <div className={"h-[100vh]"}>
+                            <Header displayMenu={displayMenu} setDisplayMenu={setDisplayMenu} />
+                        </div>
+                    </>
+                )
+            }
+        </>
+    );
 };

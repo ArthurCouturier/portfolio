@@ -1,9 +1,8 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: boolean) => void}) {
 
-    const [displayMenu, setDisplayMenu] = React.useState(false);
-
+    const { displayMenu, setDisplayMenu } = props
     const changeDisplayMenu = () => {
         setDisplayMenu(!displayMenu);
     }

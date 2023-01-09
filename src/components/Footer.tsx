@@ -1,7 +1,11 @@
 import React from "react";
+// @ts-ignore
 import { ReactComponent as LinkedinSVG } from "../assets/icons8-linkedin-material-filled/icons8-linkedin-48.svg";
+// @ts-ignore
 import { ReactComponent as TwitterSVG } from "../assets/icons8-twitter-material-filled/icons8-twitter-48.svg";
+// @ts-ignore
 import { ReactComponent as GithubSVG } from "../assets/icons8-github-material-filled/icons8-github-48.svg";
+// @ts-ignore
 import { ReactComponent as YoutubeSVG } from "../assets/icons8-youtube-material-filled/icons8-youtube-48.svg"
 
 export default function Footer() {
