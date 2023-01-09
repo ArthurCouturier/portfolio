@@ -27,10 +27,10 @@ export default function Footer() {
                 </a>
             </div>
             <div className={"container w-[60vw] justify-around mx-auto flex flex-grow"}>
-                <p className={"transition duration-500 ease-in-out hover:text-blue-500"}>
+                <p className={"transition duration-300 ease-in-out hover:text-red-500"}>
                     Arthur Couturier
                 </p>
-                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"duration-500 hover:text-blue-500 focus:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
+                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"duration-300 hover:text-blue-500 focus:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
             </div>
         </div>
     )

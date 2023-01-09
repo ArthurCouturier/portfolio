@@ -28,6 +28,7 @@ const router = createBrowserRouter([
 
 export default function App() {
     const [displayMenu, setDisplayMenu] = React.useState(false);
+
     return (
         <>
             {

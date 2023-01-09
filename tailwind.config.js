@@ -12,6 +12,9 @@ module.exports = {
       fontUrl: {
         'raleway': 'https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap',
         'josefin': 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Raleway:wght@500&display=swap'
+      },
+      textColor: {
+        'text-red-hover': '#FF4136'
       }
     },
   },
