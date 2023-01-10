@@ -11,18 +11,27 @@ const colors = [
 function chooseColor() {
     const randomIndex = Math.floor(Math.random() * colors.length);
     const randomColor = colors[randomIndex];
-    const property = "mx-1/2 transition-transform duration-200 hover:text-" + randomColor;
-    return property;
+    return randomColor;
 };
 
-export default function ColorWordsFunction(props: { globalText:string }) {
-    const { globalText } = props;
+export default function ColorWordsFunction(props: { globalText:string, forceProp?:string }) {
+    const { globalText, forceProp } = props;
 
     return (
-        <div className={"flex-1 text-center"}>
+        <div className={forceProp}>
             {globalText.split(' ').map((word) => {
+
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                const [color, setColor] = React.useState("black-500");
+
+                const property = "mx-1/2 transition-transform duration-200 text-" + color;
+
+                function changerCouleur() {
+                    setColor(chooseColor);
+                }
+
                 return (
-                    <a className={chooseColor()} key={word}>
+                    <a className={property} key={word} onMouseOver={changerCouleur}>
                         {word + " "}
                     </a>
                 )

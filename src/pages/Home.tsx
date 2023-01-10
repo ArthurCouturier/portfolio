@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 // @ts-ignore
 import { ReactComponent as ResumeSVG } from "../assets/icons8-contacts.svg";
 // @ts-ignore
@@ -20,10 +18,10 @@ export default function Home() {
                     <ColorWordsFunction globalText={
                         "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +
                         " nammed Lyra Network in the Payment Means' Team."
-                    } />
+                    } forceProp={"flex-1 text-center"} />
                     <ColorWordsFunction globalText={
                         "This portfolio is under construction"
-                    } />
+                    } forceProp={"flex-1 text-center"} />
                 </div>
                 <div className={"flex-1 flex"}>
                     <InternRoute route={pdf} Svg={ResumeSVG} str={"My Resume"} newTab />

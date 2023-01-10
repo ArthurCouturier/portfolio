@@ -7,8 +7,21 @@ import { ReactComponent as TwitterSVG } from "../assets/icons8-twitter-material-
 import { ReactComponent as GithubSVG } from "../assets/icons8-github-material-filled/icons8-github-48.svg";
 // @ts-ignore
 import { ReactComponent as YoutubeSVG } from "../assets/icons8-youtube-material-filled/icons8-youtube-48.svg"
+import * as colorette from "colorette";
+import ColorWordsFunction from "../assets/ColorWordsFunction";
 
 export default function Footer() {
+
+    const colors = ["text-orange-500", "text-emerald-500"];
+    const [color, setColor] = React.useState(colors[0]);
+    function changerCouleur() {
+        if (color == colors[0]) {
+            setColor(colors[1]);
+        }
+        if (color == colors[1]) {
+            setColor(colors[0]);
+        }
+    }
 
     return (
         <div className="h-[100%] bg-gray-200 shadow border flex-grow font-josefin">
@@ -27,10 +40,16 @@ export default function Footer() {
                 </a>
             </div>
             <div className={"container w-[60vw] justify-around mx-auto flex flex-grow"}>
-                <p className={"transition duration-300 ease-in-out hover:text-red-500"}>
-                    Arthur Couturier
-                </p>
+                <ColorWordsFunction globalText={
+                    "Arthur Couturier"
+                } forceProp={""} />
                 <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"duration-300 hover:text-blue-500 focus:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
+            </div>
+            <div>
+                <a className={"hover:text-violet-500"}></a>
+                <a className={"hover:text-orange-500"}></a>
+                <a className={"hover:text-emerald-500"}></a>
+                <a className={"hover:text-yellow-500"}></a>
             </div>
         </div>
     )
