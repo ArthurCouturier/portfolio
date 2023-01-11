@@ -7,6 +7,8 @@ import { ReactComponent as SkillsSVG } from "../assets/icons8-walter-white.svg";
 import { ReactComponent as WorksSVG } from "../assets/icons8-toolbox.svg";
 // @ts-ignore
 import pdf from '../assets/cvM1.pdf';
+// @ts-ignore
+import picture from '../assets/PhotoCouturierArthur.png';
 import InternRoute from "./InternRoute";
 import ColorWordsFunction from "../assets/ColorWordsFunction";
 
@@ -17,8 +19,8 @@ export default function Home() {
                 <div className={"flex-1"}>
                     Left
                 </div>
-                <div className={"flex-1"}>
-                    Ici ma photo
+                <div className={"flex-1 "}>
+                    <img src={picture} className={"h-[90%] object-cover object-center rounded-full mx-auto"}/>
                 </div>
                 <div className={"flex-1"}>
                     Right
@@ -26,13 +28,17 @@ export default function Home() {
             </div>
             <div className={"h-[40vh] flex-grow"}>
                 <div className={"flex-1 flex h-[20vh]"}>
-                    <ColorWordsFunction globalText={
-                        "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +
-                        " nammed Lyra Network in the Payment Means' Team."
-                    } forceProp={"flex-1 text-center"} />
-                    <ColorWordsFunction globalText={
-                        "This portfolio is under construction"
-                    } forceProp={"flex-1 text-center"} />
+                    <div className={"w-[30%] mx-auto"}>
+                        <ColorWordsFunction globalText={
+                            "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +
+                            " nammed Lyra Network in the Payment Means' Team."
+                        } forceProp={"flex-1 text-center"} />
+                    </div>
+                    <div className={"w-[30%] mx-auto"}>
+                        <ColorWordsFunction globalText={
+                            "This portfolio is under construction"
+                        } forceProp={"flex-1 text-center"} />
+                    </div>
                 </div>
                 <div className={"flex-1 flex"}>
                     <InternRoute route={pdf} Svg={ResumeSVG} str={"My Resume"} newTab />

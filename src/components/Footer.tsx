@@ -25,7 +25,7 @@ export default function Footer() {
 
     return (
         <div className="h-[100%] bg-gray-200 border flex-grow font-josefin">
-            <div className={"container w-[60vw] justify-around mx-auto flex flex-row"}>
+            <div className={"container w-[60vw] justify-around mx-auto flex flex-row my-2.5"}>
                 <a href={"https://www.linkedin.com/in/arthur-c-418311131/"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
                     <LinkedinSVG />
                 </a>
@@ -39,13 +39,13 @@ export default function Footer() {
                     <YoutubeSVG />
                 </a>
             </div>
-            <div className={"container w-[60vw] justify-around mx-auto flex flex-grow"}>
+            <div className={"container w-[60vw] justify-around mx-auto flex flex-grow my-2.5"}>
                 <p>
                     ©Arthur Couturier 2023
                 </p>
                 <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"transition duration-500 hover:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
             </div>
-            <div className={"text-center"}>
+            <div className={"text-center my-2.5"}>
                 Check the repo here:
                 <a href={"https://github.com/ArthurCouturier/portfolio"} className={"transition duration-500 hover:text-blue-500"}> https://github.com/ArthurCouturier/portfolio</a>
             </div>
