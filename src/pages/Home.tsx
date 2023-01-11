@@ -10,7 +10,7 @@ import pdf from '../assets/cvM1.pdf';
 // @ts-ignore
 import picture from '../assets/PhotoCouturierArthur.png';
 import InternRoute from "./InternRoute";
-import ColorWordsFunction from "../assets/ColorWordsFunction";
+// import ColorWordsFunction from "../assets/ColorWordsFunction";
 
 export default function Home() {
     return (
@@ -20,12 +20,19 @@ export default function Home() {
                     French Engineer in
                     <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-pink-500"}> Toulouse</a>
                 </div>
-                <div className={"flex-1"}>
+                <div className={"w-[20vw]"}>
                     <img src={picture} className={"h-[90%] object-cover object-center rounded-full mx-auto"}/>
                 </div>
                 <div className={"flex-1 text-right mx-14"}>
-                    I study at ENSEEIHT (Toulouse) and working at
-                    <a href={"https://www.lyra.com/fr/"} target="_blank" className={"transition duration-500 hover:text-blue-500"}> Lyra Network</a>
+                    <div>
+                        I study at
+                        <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-blue-800"}> ENSEEIHT </a>
+                        and
+                    </div>
+                    <div>
+                        work at
+                        <a href={"https://www.lyra.com/fr/"} target="_blank" className={"transition duration-500 hover:text-blue-400"}> Lyra Network</a>
+                    </div>
                 </div>
             </div>
             <div className={"h-[40vh] flex-grow"}>
