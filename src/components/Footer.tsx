@@ -24,7 +24,7 @@ export default function Footer() {
     }
 
     return (
-        <div className="h-[100%] bg-gray-200 shadow border flex-grow font-josefin">
+        <div className="h-[100%] bg-gray-200 border flex-grow font-josefin">
             <div className={"container w-[60vw] justify-around mx-auto flex flex-row"}>
                 <a href={"https://www.linkedin.com/in/arthur-c-418311131/"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
                     <LinkedinSVG />
@@ -40,16 +40,14 @@ export default function Footer() {
                 </a>
             </div>
             <div className={"container w-[60vw] justify-around mx-auto flex flex-grow"}>
-                <ColorWordsFunction globalText={
-                    "Arthur Couturier"
-                } forceProp={""} />
-                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"duration-300 hover:text-blue-500 focus:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
+                <p>
+                    ©Arthur Couturier 2023
+                </p>
+                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"transition duration-500 hover:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
             </div>
-            <div>
-                <a className={"hover:text-violet-500"}></a>
-                <a className={"hover:text-orange-500"}></a>
-                <a className={"hover:text-emerald-500"}></a>
-                <a className={"hover:text-yellow-500"}></a>
+            <div className={"text-center"}>
+                Check the repo here:
+                <a href={"https://github.com/ArthurCouturier/portfolio"} className={"transition duration-500 hover:text-blue-500"}> https://github.com/ArthurCouturier/portfolio</a>
             </div>
         </div>
     )

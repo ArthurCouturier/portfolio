@@ -37,7 +37,8 @@ export default function App() {
                         <div className={"h-[30vh]"}>
                             <Header displayMenu={displayMenu} setDisplayMenu={setDisplayMenu}/>
                         </div>
-                        <RouterProvider router={router}/><Footer/>
+                        <RouterProvider router={router}/>
+                        <Footer/>
                     </>
                 ) : (
                     <>

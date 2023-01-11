@@ -12,8 +12,19 @@ import ColorWordsFunction from "../assets/ColorWordsFunction";
 
 export default function Home() {
     return (
-        <>
-            <div className={"h-[70vh] bg-gray-200 shadow border flex-grow"}>
+        <div className={"flex-grow bg-gray-200 border"}>
+            <div className={"h-[30vh] text-center flex"}>
+                <div className={"flex-1"}>
+                    Left
+                </div>
+                <div className={"flex-1"}>
+                    Ici ma photo
+                </div>
+                <div className={"flex-1"}>
+                    Right
+                </div>
+            </div>
+            <div className={"h-[40vh] flex-grow"}>
                 <div className={"flex-1 flex h-[20vh]"}>
                     <ColorWordsFunction globalText={
                         "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +
@@ -29,6 +40,6 @@ export default function Home() {
                     <InternRoute route={"/Works"} Svg={WorksSVG} str={"My Works"} />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
