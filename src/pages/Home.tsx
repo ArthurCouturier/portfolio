@@ -15,30 +15,32 @@ import ColorWordsFunction from "../assets/ColorWordsFunction";
 export default function Home() {
     return (
         <div className={"flex-grow bg-gray-200 border"}>
-            <div className={"h-[30vh] text-center flex"}>
-                <div className={"flex-1"}>
-                    Left
+            <div className={"h-[30vh] font-bold text-xl flex"}>
+                <div className={"flex-1 text-left mx-14"}>
+                    French Engineer in
+                    <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-pink-500"}> Toulouse</a>
                 </div>
-                <div className={"flex-1 "}>
+                <div className={"flex-1"}>
                     <img src={picture} className={"h-[90%] object-cover object-center rounded-full mx-auto"}/>
                 </div>
-                <div className={"flex-1"}>
-                    Right
+                <div className={"flex-1 text-right mx-14"}>
+                    I study at ENSEEIHT (Toulouse) and working at
+                    <a href={"https://www.lyra.com/fr/"} target="_blank" className={"transition duration-500 hover:text-blue-500"}> Lyra Network</a>
                 </div>
             </div>
             <div className={"h-[40vh] flex-grow"}>
                 <div className={"flex-1 flex h-[20vh]"}>
-                    <div className={"w-[30%] mx-auto"}>
-                        <ColorWordsFunction globalText={
-                            "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +
-                            " nammed Lyra Network in the Payment Means' Team."
-                        } forceProp={"flex-1 text-center"} />
-                    </div>
-                    <div className={"w-[30%] mx-auto"}>
-                        <ColorWordsFunction globalText={
-                            "This portfolio is under construction"
-                        } forceProp={"flex-1 text-center"} />
-                    </div>
+                    {/*<div className={"w-[30%] mx-auto"}>*/}
+                    {/*    <ColorWordsFunction globalText={*/}
+                    {/*        "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +*/}
+                    {/*        " nammed Lyra Network in the Payment Means' Team."*/}
+                    {/*    } forceProp={"flex-1 text-center"} />*/}
+                    {/*</div>*/}
+                    {/*<div className={"w-[30%] mx-auto"}>*/}
+                    {/*    <ColorWordsFunction globalText={*/}
+                    {/*        "This portfolio is under construction"*/}
+                    {/*    } forceProp={"flex-1 text-center"} />*/}
+                    {/*</div>*/}
                 </div>
                 <div className={"flex-1 flex"}>
                     <InternRoute route={pdf} Svg={ResumeSVG} str={"My Resume"} newTab />

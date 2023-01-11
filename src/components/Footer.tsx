@@ -43,11 +43,11 @@ export default function Footer() {
                 <p>
                     ©Arthur Couturier 2023
                 </p>
-                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"transition duration-500 hover:text-blue-500"}>arthur.couturier.2000@gmail.com</a>
+                <a href={"mailto:arthur.couturier.2000@gmail.com"} className={"transition duration-500 hover:text-emerald-500"}>arthur.couturier.2000@gmail.com</a>
             </div>
             <div className={"text-center my-2.5"}>
                 Check the repo here:
-                <a href={"https://github.com/ArthurCouturier/portfolio"} className={"transition duration-500 hover:text-blue-500"}> https://github.com/ArthurCouturier/portfolio</a>
+                <a href={"https://github.com/ArthurCouturier/portfolio"} className={"transition duration-500 hover:text-violet-500"}> https://github.com/ArthurCouturier/portfolio</a>
             </div>
         </div>
     )
