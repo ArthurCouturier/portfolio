@@ -1,4 +1,5 @@
 import React from "react";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: boolean) => void}) {
 
@@ -12,27 +13,23 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
             {
                 !displayMenu? (
 
-                    <div className="h-[100%] bg-gray-200 shadow border flex font-raleway">
-                        <div className={"flex-1"}>
-                            <a className="text-3xl text-gray-700 font-extrabold mb-5" href={"/"}>
+                    <div className="h-[100%] bg-black shadow border flex font-raleway">
+                        <div className={"flex-1 mx-5 my-5"}>
+                            <a className="text-3xl text-white font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100" href={"/"}>
                                 CoutCout
                             </a>
                             <div className="text-gray-500 text-lg">
                                 React and Tailwind CSS are in action on this website
                             </div>
                         </div>
-                        <div className={"flex-3 inset-y-0 right-0 relative"}>
-                            <svg viewBox="0 0 100 80" className={"w-10 h-10 absolute inset-y-5 right-10"} onClick={changeDisplayMenu}>
-                                <rect className={"right-0"} width="100" height="10"></rect>
-                                <rect x="25" y="30" width="50" height="10"></rect>
-                                <rect y="60" width="100" height="10"></rect>
-                            </svg>
+                        <div className={"flex-3 inset-y-0 right-0 relative my-3"}>
+                            <BurgerMenu changeDisplayMenu={changeDisplayMenu} />
                         </div>
                     </div>
 
                 ) : (
 
-                    <div className="h-[100%] bg-gray-200 shadow border flex">
+                    <div className="h-[100%] bg-black shadow border flex">
                         <div className={"flex-1"}>
                             <a className="text-3xl text-gray-700 font-extrabold mb-5" href={"/"}>
                                 Menu
@@ -56,11 +53,7 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
                             </div>
                         </div>
                         <div className={"flex-3 inset-y-0 right-0 relative"}>
-                            <svg viewBox="0 0 100 80" className={"w-10 h-10 absolute inset-y-5 right-10"} onClick={changeDisplayMenu}>
-                                <rect x="25" width="50" height="10"></rect>
-                                <rect y="30" width="100" height="10"></rect>
-                                <rect x="25" y="60" width="50" height="10"></rect>
-                            </svg>
+                            <BurgerMenu changeDisplayMenu={changeDisplayMenu} />
                         </div>
                     </div>
 

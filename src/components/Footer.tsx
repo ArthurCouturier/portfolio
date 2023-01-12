@@ -7,8 +7,6 @@ import { ReactComponent as TwitterSVG } from "../assets/icons8-twitter-material-
 import { ReactComponent as GithubSVG } from "../assets/icons8-github-material-filled/icons8-github-48.svg";
 // @ts-ignore
 import { ReactComponent as YoutubeSVG } from "../assets/icons8-youtube-material-filled/icons8-youtube-48.svg"
-import * as colorette from "colorette";
-import ColorWordsFunction from "../assets/ColorWordsFunction";
 
 export default function Footer() {
 
@@ -23,19 +21,21 @@ export default function Footer() {
         }
     }
 
+    const svgEffect = "fill-white opacity-80 transition duration-500 hover:scale-[1.2] hover:opacity-100"
+
     return (
-        <div className="h-[100%] bg-gray-200 border flex-grow font-josefin">
+        <div className="h-[100%] bg-black text-white border flex-grow font-josefin">
             <div className={"container w-[60vw] justify-around mx-auto flex flex-row my-2.5"}>
-                <a href={"https://www.linkedin.com/in/arthur-c-418311131/"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
+                <a href={"https://www.linkedin.com/in/arthur-c-418311131/"} target="_blank" className={svgEffect}>
                     <LinkedinSVG />
                 </a>
-                <a href={"https://twitter.com/ArthurCouturier"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
+                <a href={"https://twitter.com/ArthurCouturier"} target="_blank" className={svgEffect}>
                     <TwitterSVG />
                 </a>
-                <a href={"https://github.com/ArthurCouturier"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
+                <a href={"https://github.com/ArthurCouturier"} target="_blank" className={svgEffect}>
                     <GithubSVG />
                 </a>
-                <a href={"https://www.youtube.com/channel/UCaJN6T-wJAWX5OkWDEmK58A"} target="_blank" className={"transition duration-500 hover:scale-[1.2]"}>
+                <a href={"https://www.youtube.com/channel/UCaJN6T-wJAWX5OkWDEmK58A"} target="_blank" className={svgEffect}>
                     <YoutubeSVG />
                 </a>
             </div>
