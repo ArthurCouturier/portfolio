@@ -15,6 +15,7 @@ import InternRoute from "./InternRoute";
 export default function Home() {
     return (
         <div className={"flex-grow bg-gray-200 border"}>
+            <div className={"h-[10vh]"}></div>
             <div className={"h-[30vh] font-bold text-xl flex"}>
                 <div className={"flex-1 text-left mx-14"}>
                     French Engineer in

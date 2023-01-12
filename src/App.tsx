@@ -34,7 +34,7 @@ export default function App() {
             {
                 !displayMenu? (
                     <>
-                        <div className={"h-[30vh]"}>
+                        <div className={"h-[20vh]"}>
                             <Header displayMenu={displayMenu} setDisplayMenu={setDisplayMenu}/>
                         </div>
                         <RouterProvider router={router}/>
