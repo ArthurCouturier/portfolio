@@ -21,11 +21,11 @@ export default function Footer() {
         }
     }
 
-    const svgEffect = "fill-white opacity-80 transition duration-500 hover:scale-[1.2] hover:opacity-100"
+    const svgEffect = "fill-white opacity-80 transition duration-500 hover:scale-[1.2] hover:opacity-100 my-4"
 
     return (
-        <div className="h-[100%] bg-black text-white border flex-grow font-josefin">
-            <div className={"container w-[60vw] justify-around mx-auto flex flex-row my-2.5"}>
+        <div className="h-[100%] bg-black text-white flex-grow font-josefin">
+            <div className={"container w-[60vw] justify-around mx-auto flex flex-row"}>
                 <a href={"https://www.linkedin.com/in/arthur-c-418311131/"} target="_blank" className={svgEffect}>
                     <LinkedinSVG />
                 </a>
@@ -39,7 +39,7 @@ export default function Footer() {
                     <YoutubeSVG />
                 </a>
             </div>
-            <div className={"container w-[60vw] justify-around mx-auto flex flex-grow my-2.5"}>
+            <div className={"container w-[60vw] justify-around mx-auto flex flex-grow"}>
                 <p>
                     ©Arthur Couturier 2023
                 </p>

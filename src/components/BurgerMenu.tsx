@@ -1,12 +1,10 @@
 import React, {useState} from "react";
-import {hover} from "@testing-library/user-event/dist/hover";
 
-export default function BurgerMenu(props: { changeDisplayMenu: () => {} }) {
+export default function BurgerMenu(props: { changeDisplayMenu: () => void }) {
 
     const changeDisplayMenu = props.changeDisplayMenu;
 
     const [hovered, setHovered] = useState(false);
-    const [opacity, setOpacity] = useState(70);
 
     // Middle Bar
     const [wMiddle, setWMiddle] = useState(50);
@@ -26,7 +24,6 @@ export default function BurgerMenu(props: { changeDisplayMenu: () => {} }) {
 
     const Transformation = () => {
         setHovered(!hovered);
-        setOpacity(hovered?10:100);
         transformExt();
         transformMiddle();
     }
@@ -42,6 +39,7 @@ export default function BurgerMenu(props: { changeDisplayMenu: () => {} }) {
                 <rect className={`transform duration-500`} x={`${xExt}`} width={`${wExt}`} height="10"></rect>
                 <rect className={`transform duration-500`} x={`${xMiddle}`} y="30" width={`${wMiddle}`} height="10"></rect>
                 <rect className={`transform duration-500`} x={`${xExt}`} y="60" width={`${wExt}`} height="10"></rect>
+
             </svg>
         </div>
     )
