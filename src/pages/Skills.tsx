@@ -24,7 +24,7 @@ const WebSkills = [
 const OtherSkills = [
     { name: "Java", icon: "devicon-java-plain-wordmark", url: "https://www.java.com/fr/" },
     { name: "Python", icon: "devicon-python-plain-wordmark", url: "https://www.python.org" },
-    { name: "TensorFlow", icon: "devicon-tensorflow-original", url: "https://www.python.org" },
+    { name: "TensorFlow", icon: "devicon-tensorflow-original", url: "https://www.tensorflow.org" },
     { name: "C", icon: "devicon-c-plain-wordmark", url: "https://fr.wikipedia.org/wiki/C_(langage)" },
     { name: "Qt", icon: "devicon-qt-original", url: "https://www.qt.io" },
     { name: "Gradle", icon: "devicon-gradle-plain", url: "https://gradle.org" },
