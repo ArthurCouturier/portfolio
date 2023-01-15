@@ -15,6 +15,26 @@ module.exports = {
       },
       textColor: {
         'text-red-hover': '#FF4136'
+      },
+      keyframes: {
+        animateBG: {
+          '0%': {
+            backgroundPosition: '0 0',
+            backgroundOpacity: '50'
+          },
+          '100%': {
+            backgroundPosition: '-400% 2000%',
+            backgroundOpacity: '50'
+          },
+        },
+      },
+      backgroundImage: {
+        waves: "url('./assets/backgrounds/wavey-fingerprint.svg')",
+        arrows: "url('./assets/backgrounds/alternating-arrowhead.svg')",
+        corners: "url('./assets/backgrounds/cornered-stairs.svg')",
+      },
+      animation: {
+        animateBG: 'animateBG 100s linear infinite',
       }
     },
   },

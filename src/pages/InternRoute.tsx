@@ -5,7 +5,7 @@ export default function InternRoute(props: {route: string, newTab?:boolean, Svg:
 
     return (
         <div className={"flex-1 flex"}>
-            <a target={newTab ? '_blank' : ''} className={"mx-auto flex items-center transition duration-500 hover:scale-[1.2]"} href={route}>
+            <a target={newTab ? '_blank' : ''} className={"mx-auto flex items-center transition duration-500 hover:scale-[1.2] fill-gray-200"} href={route}>
                 <Svg /> {str}
             </a>
         </div>
