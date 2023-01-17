@@ -6,6 +6,7 @@ import Skills from './pages/Skills';
 import About from './pages/About';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import DallE2 from "./pages/DallE2";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />
     },
+    {
+        path: "/dalle2",
+        element: <DallE2 />
+    }
 ])
 
 export default function App() {
