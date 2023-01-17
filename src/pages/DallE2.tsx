@@ -24,7 +24,7 @@ import img10 from "../assets/DallE/img10.png";
 import img11 from "../assets/DallE/img11.png";
 
 const images = [
-{ url: img1, desc: "Album cover with 3D astronaut painted by a great painter" },
+    { url: img1, desc: "Album cover with 3D astronaut painted by a great painter" },
     { url: img2, desc: "Album cover with 3D astronaut painted by a great painter" },
     { url: img3, desc: "Paint of a 3D astronaut walking in a special desert" },
     { url: img4, desc: "Paint of a 3D ancient astronaut in strange places" },
