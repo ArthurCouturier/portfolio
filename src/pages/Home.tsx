@@ -16,17 +16,17 @@ export default function Home() {
     return (
         // bg-gray-200
         <div className={"bg-animation bg-secondary bg-waves bg-center bg-cover animate-animateBG text-gray-200"} >
-            <div className={"flex-grow"}>
+            <div className={"flex-grow xl:text-3xl"}>
                 <div className={"h-[10vh]"}></div>
-                <div className={"h-[30vh] font-bold text-xl flex"}>
+                <div className={"md:h-[30vh] font-bold text-m sm:text-xl md:flex sm:h-[50vh] sm:flex-grow"}>
                     <div className={"flex-1 text-left mx-14"}>
                         French Engineer in
                         <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-pink-500"}> Toulouse</a>
                     </div>
-                    <div className={"w-[20vw]"}>
-                        <img src={picture} className={"h-[90%] object-cover object-center rounded-full mx-auto"}/>
+                    <div className={"h-[75vw] w-[100vw] sm:w-[20vw] sm:h-[20vw] mx-auto"}>
+                        <img src={picture} className={"w-[75vw] md:[20vw] my-5 sm:my-0 object-cover object-center rounded-full mx-auto"}/>
                     </div>
-                    <div className={"flex-1 text-right mx-14"}>
+                    <div className={"flex-1 text-right mx-14 my-7 md:my-0"}>
                         <div>
                             I study at
                             <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-blue-800"}> ENSEEIHT </a>
@@ -38,8 +38,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className={"h-[40vh] flex-grow"}>
-                    <div className={"flex-1 flex h-[20vh]"}>
+                <div className={"md:h-[40vh] flex-grow h-[20vh]"}>
+                    <div className={"flex-1 flex md:h-[20vh] sm:h-0"}>
                         {/*<div className={"w-[30%] mx-auto"}>*/}
                         {/*    <ColorWordsFunction globalText={*/}
                         {/*        "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +*/}

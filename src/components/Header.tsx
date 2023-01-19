@@ -16,10 +16,10 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
 
                     <div className="h-[100%] bg-black shadow flex font-raleway">
                         <div className={"flex-1 mx-5 my-5"}>
-                            <a className="text-3xl text-white font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100" href={"/"}>
+                            <a className="text-xl sm:text-3xl xl:text-5xl text-white font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100" href={"/"}>
                                 CoutCout
                             </a>
-                            <div className="text-gray-500 text-lg">
+                            <div className="text-gray-500 text-sm sm:text-lg w-1/2 sm:w-max">
                                 React and Tailwind CSS are in action on this website
                             </div>
                         </div>
@@ -31,9 +31,9 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
                 ) : (
 
                     <div className={"h-[100%] bg-black"}>
-                        <div className=" bg-black shadow flex">
+                        <div className="bg-black shadow flex">
                             <div className={"flex-1 mx-5 my-5"}>
-                                <a className="text-3xl text-white font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100" href={"/"}>
+                                <a className="text-xl sm:text-3xl text-white font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100" href={"/"}>
                                     Menu
                                 </a>
                             </div>
@@ -41,8 +41,8 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
                                 <BurgerMenu changeDisplayMenu={changeDisplayMenu} />
                             </div>
                         </div>
-                        <div className={"flex-1 mx-20 w-[20vw]"}>
-                            <div className={"flex-grow text-gray-500 text-lg my-10"}>
+                        <div className={"flex-1 mx-5 w-[40vw] sm:mx-20 sm:w-[20vw]"}>
+                            <div className={"flex-grow text-gray-500 text-lg my-5 sm:my-10"}>
                                 <MenuButton name={"Skills"} url={"/Skills"} />
                                 <MenuButton name={"Works"} url={"/Works"} />
                                 <MenuButton name={"About"} url={"/About"} />

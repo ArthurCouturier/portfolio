@@ -54,24 +54,24 @@ export default function Skills() {
     return (
         <div className={"bg-gray-200 border"}>
             <div className={"my-4 flex-wrap"}>
-                <h2 className={"text-xl font-bold"}>My Web Skills:</h2>
-                <div className={"h-max grid grid-cols-7 grid-rows-2"}>
+                <h2 className={"text-xl font-bold text-center md:text-left"}>My Web Skills:</h2>
+                <div className={"h-max grid grid-cols-4 sm:grid-cols-7 grid-rows-2"}>
                     {WebSkills.map((skill) => {
                         return <Skill skill={JSON.stringify(skill)} />
                     })}
                 </div>
             </div>
             <div className={"my-4"}>
-                <h2 className={"text-xl font-bold"}>My Other Skills:</h2>
-                <div className={"h-max grid grid-cols-6 grid-rows-2"}>
+                <h2 className={"text-xl font-bold text-center md:text-left"}>My Other Skills:</h2>
+                <div className={"h-max grid grid-cols-4 sm:grid-cols-7 grid-rows-2"}>
                     {OtherSkills.map((skill) => {
                         return <Skill skill={JSON.stringify(skill)} />
                     })}
                 </div>
             </div>
             <div className={"my-4"}>
-                <h2 className={"text-xl font-bold"}>My Tools:</h2>
-                <div className={"h-max grid grid-cols-6 grid-rows-2"}>
+                <h2 className={"text-xl font-bold text-center md:text-left"}>My Tools:</h2>
+                <div className={"h-max grid grid-cols-4 sm:grid-cols-7 grid-rows-2"}>
                     {Tools.map((skill) => {
                         return <Skill skill={JSON.stringify(skill)} />
                     })}
