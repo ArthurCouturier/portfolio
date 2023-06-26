@@ -39,7 +39,7 @@ const images = [
 
 export default function DallE2() {
     return (
-        <div className={"bg-animation bg-secondary bg-waves bg-center bg-cover animate-animateBG text-gray-200 flex-grow"}>
+        <div className={"bg-animation bg-secondary bg-gray-500 bg-center bg-cover animate-animateBG text-gray-200 flex-grow"}>
             <div className={"text-xl text-gray-200 opacity-80 text-center"}>
                 Voici certaines images que j'ai pu générer en utilisant l'IA d'
                 <a href={"https://openai.com"} className={"transtion duration-300 hover:opacity-100 hover:text-pink-500"} target={"_blank"}>OpenAI </a>
