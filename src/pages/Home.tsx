@@ -6,7 +6,7 @@ import { ReactComponent as SkillsSVG } from "../assets/icons8-walter-white.svg";
 // @ts-ignore
 import { ReactComponent as WorksSVG } from "../assets/icons8-toolbox.svg";
 // @ts-ignore
-import pdf from '../assets/cv-sortie-n7.pdf';
+import pdf from '../assets/cv-arthur-couturier.pdf';
 // @ts-ignore
 import picture from '../assets/PhotoCouturierArthur.png';
 import InternRoute from "./InternRoute";
