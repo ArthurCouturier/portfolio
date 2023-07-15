@@ -6,6 +6,9 @@ export default function Works() {
         <div className={"bg-animation bg-waves bg-center bg-cover animate-animateBG text-gray-200"}>
             <div className={"h-max w-[100vw]"}>
 
+                <Work title={"In progress: Website of a law firm: React, Next.js, Tailwind, Vercel"}
+                      url={"https://anthea-avocats-associes.vercel.app"} />
+
                 <div className={"text-center"}>
                     <a className={"text-2xl font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100 hover:underline"}
                        href={"https://faint-poppy-175.notion.site/The-Netherlands-8e80dc5b885c45988f1229467572e743?pvs=4"}
