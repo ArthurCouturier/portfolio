@@ -9,6 +9,9 @@ export default function Works() {
                 <Work title={"In progress: Website of a law firm: React, Next.js, Tailwind, Vercel"}
                       url={"https://anthea-avocats-associes.vercel.app"} />
 
+                <Work title={"In progress: Social media I am developping: React, Next.js, Tailwind, Vercel, Prisma, MongoDB, PostgreSQL"}
+                    url={"https://social-network-jtz4jpa1c-arthurcouturier.vercel.app"} />
+
                 <div className={"text-center"}>
                     <a className={"text-2xl font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100 hover:underline"}
                        href={"https://faint-poppy-175.notion.site/The-Netherlands-8e80dc5b885c45988f1229467572e743?pvs=4"}
