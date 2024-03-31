@@ -6,10 +6,13 @@ export default function Works() {
         <div className={"bg-animation bg-waves bg-center bg-cover animate-animateBG text-gray-200"}>
             <div className={"h-max w-[100vw]"}>
 
-                <Work title={"In progress: Website of a law firm: React, Next.js, Tailwind, Vercel"}
+                <Work title={"In progress: My new app under construction, back isn't in production yet: Java / Spring, React, Tailwind, Vercel, PostgreSQL"}
+                      url={"https://www.pepperz.app"} />
+
+                <Work title={"Website of a law firm in development: React, Next.js, Tailwind, Vercel"}
                       url={"https://anthea-avocats-associes.vercel.app"} />
 
-                <Work title={"In progress: Social media I am developping: React, Next.js, Tailwind, Vercel, Prisma, MongoDB, PostgreSQL"}
+                <Work title={"Social media I am developping: React, Next.js, Tailwind, Vercel, Prisma, MongoDB, PostgreSQL"}
                     url={"https://social-network-jtz4jpa1c-arthurcouturier.vercel.app"} />
 
                 <div className={"text-center"}>
