@@ -20,11 +20,11 @@ export default function Home() {
                 <div className={"h-[10vh]"}></div>
                 <div className={"md:h-[30vh] font-bold text-m sm:text-xl md:flex sm:h-[50vh] sm:flex-grow"}>
                     <div className={"flex-1 text-left mx-14"}>
-                        French Engineer in
+                        French Engineer based in
                         <a href={"https://metropole.toulouse.fr"} target="_blank" className={"transition duration-500 hover:text-pink-500"}> Toulouse</a>
                     </div>
                     <div className={"h-[75vw] w-[100vw] sm:w-[20vw] sm:h-[20vw] mx-auto"}>
-                        <img src={picture} className={"w-[75vw] md:[20vw] my-5 sm:my-0 object-cover object-center rounded-full mx-auto"}/>
+                        <img src={picture} className={"w-[75vw] md:[20vw] my-5 sm:my-0 object-cover object-center rounded-full mx-auto"} />
                     </div>
                     <div className={"flex-1 text-right mx-14 my-7 md:my-0"}>
                         <div>
@@ -33,24 +33,13 @@ export default function Home() {
                             and
                         </div>
                         <div>
-                            now work at
-                            <a href={"https://www.lyra.com/fr/"} target="_blank" className={"transition duration-500 hover:text-blue-400"}> Lyra Network</a>
+                            now work as
+                            <a href={"https://www.malt.fr/profile/arthurcouturier"} target="_blank" className={"transition duration-500 hover:text-blue-400"}> Freelancer</a>
                         </div>
                     </div>
                 </div>
                 <div className={"md:h-[40vh] flex-grow h-[20vh]"}>
                     <div className={"flex-1 flex md:h-[20vh] sm:h-0"}>
-                        {/*<div className={"w-[30%] mx-auto"}>*/}
-                        {/*    <ColorWordsFunction globalText={*/}
-                        {/*        "Hi I am Arthur Couturier, a french computer engineer. I am atually working at a french company" +*/}
-                        {/*        " nammed Lyra Network in the Payment Means' Team."*/}
-                        {/*    } forceProp={"flex-1 text-center"} />*/}
-                        {/*</div>*/}
-                        {/*<div className={"w-[30%] mx-auto"}>*/}
-                        {/*    <ColorWordsFunction globalText={*/}
-                        {/*        "This portfolio is under construction"*/}
-                        {/*    } forceProp={"flex-1 text-center"} />*/}
-                        {/*</div>*/}
                     </div>
                     <div className={"flex-1 flex"}>
                         <InternRoute route={pdf} Svg={ResumeSVG} str={"My Resume"} newTab />

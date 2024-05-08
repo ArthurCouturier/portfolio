@@ -6,19 +6,30 @@ export default function Works() {
         <div className={"bg-animation bg-waves bg-center bg-cover animate-animateBG text-gray-200"}>
             <div className={"h-max w-[100vw]"}>
 
-                <Work title={"In progress: My new app under construction, back isn't in production yet: Java / Spring, React, Tailwind, Vercel, PostgreSQL"}
-                      url={"https://www.pepperz.app"} />
+                <Work title={"My new app: Java / Spring, React, Tailwind, Vercel, PostgreSQL"}
+                    url={"https://www.pepperz.app"} />
 
                 <Work title={"Website of a law firm in development: React, Next.js, Tailwind, Vercel"}
-                      url={"https://anthea-avocats-associes.vercel.app"} />
+                    url={"https://anthea-avocats-associes.vercel.app"} />
+
+                <div className={"text-center"}>
+                    <a className={"text-2xl font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100 hover:underline"}
+                        href={"https://www.instagram.com/coutcout.dev"}
+                        target={"_blank"}>
+                        Instagram account (Reals and Stories)
+                    </a>
+                    <div className={`text-gray-200 my-4`}>
+                        I share reals and stories on my advances in development, my projects and my life.
+                    </div>
+                </div>
 
                 <Work title={"Social media I am developping: React, Next.js, Tailwind, Vercel, Prisma, MongoDB, PostgreSQL"}
                     url={"https://social-network-jtz4jpa1c-arthurcouturier.vercel.app"} />
 
                 <div className={"text-center"}>
                     <a className={"text-2xl font-extrabold mb-5 opacity-80 transition duration-300 hover:opacity-100 hover:underline"}
-                       href={"https://faint-poppy-175.notion.site/The-Netherlands-8e80dc5b885c45988f1229467572e743?pvs=4"}
-                       target={"_blank"}>
+                        href={"https://faint-poppy-175.notion.site/The-Netherlands-8e80dc5b885c45988f1229467572e743?pvs=4"}
+                        target={"_blank"}>
                         My trip to the Netherlands for an internship - Summer 2022
                     </a>
                     <div className={`text-gray-200 my-4`}>
@@ -32,9 +43,9 @@ export default function Works() {
                     </a>
                     <div className={"mx-auto w-min my-7"}>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/PikNPgmBjz4"
-                                title="YouTube video player" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
                         </iframe>
                     </div>
                 </div>
@@ -51,7 +62,7 @@ export default function Works() {
                 </div>
 
                 <Work title={"Cave à vin"} url={"http://191.96.53.174"}
-                desc={"I stopped the server, impossible to reach sorry"}/>
+                    desc={"I stopped the server, impossible to reach sorry"} />
                 <Work title={"This PortFolio"} url={"/"} />
             </div>
         </div>

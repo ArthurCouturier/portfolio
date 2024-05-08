@@ -2,7 +2,7 @@ import React from "react";
 import BurgerMenu from "./BurgerMenu";
 import MenuButton from "./MenuButton";
 
-export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: boolean) => void}) {
+export default function Header(props: { displayMenu: boolean, setDisplayMenu: (b: boolean) => void }) {
 
     const { displayMenu, setDisplayMenu } = props
     const changeDisplayMenu = () => {
@@ -12,7 +12,7 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
     return (
         <>
             {
-                !displayMenu? (
+                !displayMenu ? (
 
                     <div className="h-[100%] bg-black shadow flex font-raleway">
                         <div className={"flex-1 mx-5 my-5"}>
@@ -53,6 +53,7 @@ export default function Header(props: {displayMenu:boolean, setDisplayMenu: (b: 
                                 <MenuButton name={"Github"} url={"https://github.com/ArthurCouturier"} />
                                 <MenuButton name={"Youtube"} url={"https://www.youtube.com/channel/UCaJN6T-wJAWX5OkWDEmK58A"} />
                                 <MenuButton name={"Twitter"} url={"https://twitter.com/ArthurCouturier"} />
+                                <MenuButton name={"Instagram"} url={"https://www.instagram.com/coutcout.dev"} />
                             </div>
                             <div className={"border fill-white"}></div>
                             <div>

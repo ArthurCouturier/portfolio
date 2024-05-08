@@ -16,7 +16,7 @@ export default function About() {
                 It's running using React and Tailwind frameworks.
             </div>
             <div className={property}>
-                I am a french 22-engineer studying at ENSEEIHT in Toulouse and working at Lyra Networks.
+                I am a french engineer that studied at ENSEEIHT in Toulouse and working as freelancer for few times.
             </div>
         </div>
     )

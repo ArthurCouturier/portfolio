@@ -4,6 +4,8 @@ import { ReactComponent as LinkedinSVG } from "../assets/icons8-linkedin-materia
 // @ts-ignore
 import { ReactComponent as TwitterSVG } from "../assets/icons8-twitter-material-filled/icons8-twitter-48.svg";
 // @ts-ignore
+import { ReactComponent as InstagramSVG } from "../assets/icons8-instagram/icons8-instagram-2.svg"
+// @ts-ignore
 import { ReactComponent as GithubSVG } from "../assets/icons8-github-material-filled/icons8-github-48.svg";
 // @ts-ignore
 import { ReactComponent as YoutubeSVG } from "../assets/icons8-youtube-material-filled/icons8-youtube-48.svg"
@@ -31,6 +33,9 @@ export default function Footer() {
                 </a>
                 <a href={"https://twitter.com/ArthurCouturier"} target="_blank" className={svgEffect}>
                     <TwitterSVG />
+                </a>
+                <a href={"https://www.instagram.com/coutcout.dev"} target="_blank" className={svgEffect}>
+                    <InstagramSVG />
                 </a>
                 <a href={"https://github.com/ArthurCouturier"} target="_blank" className={svgEffect}>
                     <GithubSVG />
